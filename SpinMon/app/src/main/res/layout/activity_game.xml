@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+
+    <com.rtw181204.spinmon.GameView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/base_msg"
+        android:text="0000000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#ff8800"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_items"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/base_msg"
+        android:layout_alignParentRight="true"
+        android:weightSum="9"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/label_coin"/>
+
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="0000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFF00"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/label_gem"/>
+
+        <TextView
+            android:id="@+id/tv_gem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="0000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/label_bomb"/>
+
+        <TextView
+            android:id="@+id/tv_bomb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="0000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FF8800"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_select_gamepause"
+        android:layout_toLeftOf="@id/layout_items"
+        android:clickable="true"
+        android:onClick="clickPause"/>
+
+    <ImageView
+        android:id="@+id/btn_shop_class"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_select_shop_class"
+        android:clickable="true"
+        android:layout_below="@id/layout_items"
+        android:layout_alignParentRight="true"
+        android:onClick="clickShopClass"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:id="@+id/btn_shop_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_select_shop_item"
+        android:clickable="true"
+        android:layout_below="@id/btn_shop_class"
+        android:layout_alignParentRight="true"
+        android:onClick="clickShopItem"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:id="@+id/btn_setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_select_setting"
+        android:clickable="true"
+        android:layout_below="@id/btn_shop_item"
+        android:layout_alignParentRight="true"
+        android:onClick="clickSetting"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_quit"
+        android:layout_below="@id/tv_score"
+        android:layout_marginLeft="4dp"
+        android:clickable="true"
+        android:onClick="clickQuit"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/base_msg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="CHAMPION\nSCORE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#88FF88"/>
+
+        <TextView
+            android:id="@+id/tv_champion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FF5588"/>
+
+    </LinearLayout>
+
+
+    <!--Quit 다이얼로그 역할 뷰-->
+
+    <RelativeLayout
+        android:id="@+id/dialog_quit"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/dialog_quit"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/dialog_quit_ok"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/select_ok"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"
+            android:layout_marginBottom="4dp"
+            android:onClick="clickBtn"/>
+
+        <ImageView
+            android:id="@+id/dialog_quit_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/select_cancel"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:onClick="clickBtn"/>
+
+    </RelativeLayout>
+
+
+    <!--Pause Dialog-->
+    <RelativeLayout
+        android:id="@+id/dialog_pause"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_pause"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/dialog_pause_resume"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/btn_select_resume"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:clickable="true"
+            android:onClick="clickBtn"/>
+
+    </RelativeLayout>
+
+
+    <!--shop dialog-->
+    <RelativeLayout
+        android:id="@+id/dialog_shop"
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:background="@drawable/dialog_shop"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/dialog_shop_check"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/check"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:onClick="clickBtn"/>
+
+    </RelativeLayout>
+
+
+    <!--Setting Dialog-->
+    <LinearLayout
+        android:id="@+id/dialog_setting"
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:background="@drawable/ui_setting_back"
+        android:layout_centerInParent="true"
+        android:weightSum="10"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ui_setting_label_music"/>
+
+            <ToggleButton
+                android:id="@+id/tb_music"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tb_select_music"
+                android:textOff=""
+                android:textOn=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ui_setting_label_sound"/>
+
+            <ToggleButton
+                android:id="@+id/tb_sound"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tb_select_sound"
+                android:textOff=""
+                android:textOn=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ui_setting_label_vibrate"/>
+
+            <ToggleButton
+                android:id="@+id/tb_vibrate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tb_select_vibrate"
+                android:textOff=""
+                android:textOn=""/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dialog_setting_check"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/check"
+            android:clickable="true"
+            android:layout_gravity="right"
+            android:onClick="clickBtn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

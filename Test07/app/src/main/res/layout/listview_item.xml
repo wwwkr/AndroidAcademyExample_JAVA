@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+        <TextView
+            android:id="@+id/titleA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강좌명     : "
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/titleB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleA"
+            android:text="aaaaa"
+            android:textSize="10sp"/>
+
+
+    <TextView
+        android:id="@+id/dateA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운영기간 : "
+        android:textSize="10sp"
+        android:layout_below="@id/titleA" />
+
+
+    <TextView
+        android:id="@+id/dateB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaaaa"
+        android:textSize="10sp"
+        android:layout_below="@id/titleB"
+        android:layout_toRightOf="@id/dateA"/>
+
+    <TextView
+        android:id="@+id/praceA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장소         : "
+        android:textSize="10sp"
+        android:layout_below="@id/dateA" />
+
+
+    <TextView
+        android:id="@+id/praceB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaaaa"
+        android:textSize="10sp"
+        android:layout_below="@id/dateB"
+        android:layout_toRightOf="@id/praceA"/>
+
+
+    <TextView
+        android:id="@+id/timeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간         : "
+        android:textSize="10sp"
+        android:layout_below="@id/praceA" />
+
+
+    <TextView
+        android:id="@+id/timeB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaaaa"
+        android:textSize="10sp"
+        android:layout_below="@id/praceB"
+        android:layout_toRightOf="@id/timeA"/>
+
+
+
+    <TextView
+        android:id="@+id/numberA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연락처     : "
+        android:textSize="10sp"
+        android:layout_below="@id/timeA"
+       />
+
+
+    <TextView
+        android:id="@+id/numberB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaaaa"
+        android:textSize="10sp"
+        android:layout_below="@id/timeB"
+        android:layout_toRightOf="@id/praceA"/>
+
+
+    <TextView
+        android:id="@+id/rinkA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="링크         : "
+        android:textSize="10sp"
+        android:layout_below="@id/numberA"
+      />
+
+
+    <TextView
+        android:id="@+id/rinkB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaaaa"
+        android:textSize="10sp"
+        android:layout_below="@id/numberB"
+        android:layout_toRightOf="@id/praceA"
+/>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_below="@id/numberB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "27931848915",
+    "firebase_url": "https://fir-storage-e590b.firebaseio.com",
+    "project_id": "fir-storage-e590b",
+    "storage_bucket": "fir-storage-e590b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27931848915:android:d816a4bcd6160af9",
+        "android_client_info": {
+          "package_name": "com.rtw181204.ex87firebasestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27931848915-9ptlji9dq5rptjae7vs0d57aa7l7vhoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_xnXnEFq6s32kEVjOy4Yk_Ee2wwSF9Fc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/g1">
+        <item
+            android:id="@+id/menu_aa"
+            android:title="aa"/>
+        <item
+            android:id="@+id/menu_bb"
+            android:title="bb"/>
+    </group>
+
+    <group android:id="@+id/g2">
+        <item
+            android:id="@+id/menu_cc"
+            android:title="cc"/>
+        <item
+            android:id="@+id/menu_dd"
+            android:title="dd"/>
+    </group>
+
+    <group android:id="@+id/g3">
+        <item
+            android:id="@+id/menu_ee"
+            android:title="ee"/>
+        <item
+            android:id="@+id/menu_ff"
+            android:title="ff"/>
+    </group>
+
+</menu>

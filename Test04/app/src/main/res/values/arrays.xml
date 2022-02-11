@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="nation">
+
+
+
+        <item>AUSTRALIA</item>
+        <item>BELGIUM</item>
+        <item>CANADA</item>
+        <item>CHINA</item>
+        <item>FRANCE</item>
+        <item>GERMANY</item>
+        <item>GHANA</item>
+        <item>ITALY</item>
+        <item>JAPAN</item>
+        <item>KOREA</item>
+        <item>NEPAL</item>
+        <item>RUSSIA</item>
+        <item>USA</item>
+
+       </string-array>
+
+
+
+</resources>

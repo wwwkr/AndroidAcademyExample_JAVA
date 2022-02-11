@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/city">
+        <!--다이얼로그 모드일때 다이얼로그의 제목설정-->
+        <!--android:prompt="" 단, 이때는 하드코딩하면 에러-->
+        <!--값을 반드시 R.string.xml 리소스로 지정해줘야됌-->
+
+    </Spinner>
+
+
+</RelativeLayout>

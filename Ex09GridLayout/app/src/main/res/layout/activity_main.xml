@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Table의 미흡한 점 개선 : 중첩구조 제거, rowSpan도 가능,뷰가 겹쳐질 수 있음-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <!--셀(칸)의 사이즈를 조절해도 다른 칸에 영향을 주지 않음-->
+        <Button android:width="130dp"/>
+
+        <!--셀(칸)의 위치를 지정할 때 순서가 뒤바뀌어도 상관없음-->
+        <Button android:layout_column="1"/>
+        <Button android:layout_column="0"/>
+        <Button android:layout_column="0"/>
+
+        <!--셀(칸)의 줄, 칸 번호 모두 지정가능-->
+        <Button android:layout_row="4" android:layout_column="2"/>
+
+        <!--셀병합(columnSpan-->
+        <Button android:layout_columnSpan="2" android:layout_gravity="fill_horizontal"/>
+
+        <!--rowSpan-->
+        <Button android:layout_rowSpan="2" android:layout_gravity="fill_vertical"/>
+
+
+
+
+    </GridLayout>
+
+
+    <!--stretchColumn이 없음-->
+    <!--layout_column_Weight속성이 생김-->
+    <!--21버전 미만에선 안됌 무시 -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="2">
+
+        <Button android:layout_columnWeight="1"/>
+        <Button android:layout_columnWeight="1"/>
+        <Button android:layout_columnWeight="1"/>
+    </GridLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <EditText
+            android:id="@+id/menu_et01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENDER : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="5dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/menu_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"
+                android:layout_marginRight="30dp"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NATION : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="5dp"/>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown">
+
+
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/menu_btn01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ADD MEMBER"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/menu_btn02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="CANCEL"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

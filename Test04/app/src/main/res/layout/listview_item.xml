@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/listitem_tv01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RODA"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/listitem_tv02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listitem_tv01"
+        android:text="JAPAN"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/listitem_tv01" />
+
+
+    <ImageView
+        android:id="@+id/nationId"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/img_japan"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/imgId"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/listitem_tv02"
+        android:src="@drawable/z_01"/>
+</RelativeLayout>

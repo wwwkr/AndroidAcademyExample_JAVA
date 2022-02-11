@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--경로를 Environment.getExternalStorageDirectory()-->
+    <external-path
+        name="external"
+        path="."/>
+
+
+    <!--경로를 getExternalFileDir()-->
+    <external-files-path
+        name="external_file"
+        path="."/>
+</paths>

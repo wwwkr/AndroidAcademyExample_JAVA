@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <CheckBoxPreference
+        android:key="message"
+        android:title="소리알림"
+        android:summary="소리로 알람을 받으려면 체크하세요."/>
+
+    <SwitchPreference
+        android:key="vibrate"
+        android:title="진동알림"
+        android:summary="진동으로 알림을 받으려면 체크하세요."/>
+
+
+    <PreferenceCategory android:title="카테고리">
+
+
+        <CheckBoxPreference
+            android:key="message2"
+            android:title="소리알림"
+            android:summary="소리로 알람을 받으려면 체크하세요."/>
+
+        <SwitchPreference
+            android:key="vibrate2"
+            android:title="진동알림"
+            android:summary="진동으로 알림을 받으려면 체크하세요."/>
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

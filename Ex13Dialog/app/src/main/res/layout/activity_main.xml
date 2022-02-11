@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show AlertDialog"
+        android:textAllCaps="false"
+        android:onClick="clickBtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show List AlertDialog"
+        android:textAllCaps="false"
+        android:onClick="clickBtn2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show SingleChoice AlertDialog"
+        android:textAllCaps="false"
+        android:onClick="clickBtn3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show MultipleChoice AlertDialog"
+        android:textAllCaps="false"
+        android:onClick="clickBtn4"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show CustomView AlertDialog"
+        android:textAllCaps="false"
+        android:onClick="clickBtn5"/>
+
+
+
+</LinearLayout>

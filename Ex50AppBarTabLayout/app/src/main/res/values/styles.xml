@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--제목줄이 없는 테마-->
+    <style name="AppTheme.NoAction" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--앱바 스타일-->
+    <style name="AppTheme.Appbar">
+        <item name="titleTextColor">#FFFFFF</item>
+        <item name="subtitleTextColor">#FFFFFF</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn01" />
+
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="btn02" />
+
+    <Button
+    android:id="@+id/btn03"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="btn03"/>
+
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="btn04"/>
+
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="btn05"/>
+
+    <Button
+        android:id="@+id/btn06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="btn06"/>
+
+    <Button
+        android:id="@+id/btn07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="btn07"/>
+
+    <Button
+        android:id="@+id/btn08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn08"
+        android:layout_below="@id/btn01"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aa"
+        android:layout_above="@+id/btn09"/>
+
+    <Button
+        android:id="@+id/btn09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn09"
+        android:layout_toRightOf="@id/btn02"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        android:layout_above="@id/btn05"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@id/btn05"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice"
+        android:textSize="50sp"
+        android:layout_toRightOf="@id/btn05"
+        android:layout_alignBaseline="@id/btn05"/>
+
+    <!--겹쳤을때 특이점-->
+    <!--나중에 만든 뷰가 기존 뷰를 덮어야 함-->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#FFFF0000"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="asa" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

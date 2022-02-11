@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Appbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <!--enterAlways : 스크롤을 내리면 숨어있다가 어떤 위치든 위로 올리면 나타남-->
+        </android.support.v7.widget.Toolbar>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--아래 Contents 영역-->
+    <!--이 영역을 스크롤 했을 때 AppBar도 자동으로 같이 스크롤되도록-->
+    <!--NestedScrollView or RecyclerView일 때만 가능-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#FF0000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#00FF00"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#0000FF"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

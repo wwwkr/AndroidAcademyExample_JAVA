@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    <!--스크롤뷰 안에는 오직 1개의 뷰만 추가 가능함-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--스크롤뷰 안에 있는 뷰의 height값은 어떤 값을 지정하던지 Wrap_content로 됌-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+
+                android:background="#FFFF0000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#FF00FF00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#FF0000FF"/>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <!--수평스크롤뷰-->
+    <HorizontalScrollView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp">
+
+        <!--안에는 뷰 1개만 가능-->
+        <!--안에있는 뷰의 width갑싱 무조건 Wrap-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF0000"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#FF00FF00"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#FF0000FF"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/penguins"/>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스크롤을 마지막으로"
+        android:onClick="clickBtn"/>
+</LinearLayout>

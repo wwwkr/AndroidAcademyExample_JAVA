@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--제목영역 Widget-->
+ <android.support.design.widget.AppBarLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:theme="@style/AppTheme.Appbar">
+
+     <!--제목줄 widget-->
+     <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize">
+     </android.support.v7.widget.Toolbar>
+
+
+     <!--탭 레이아웃-->
+     <!--탭의 버튼들은 Java언어에서 추가해야만 함-->
+     <android.support.design.widget.TabLayout
+         android:id="@+id/layout_tab"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:tabTextColor="#FFFFFF"
+         app:tabSelectedTextColor="#FF8800"
+         app:tabIndicatorColor="#FF8800"
+         app:tabIndicatorHeight="4dp"
+         app:tabMode="fixed">
+     </android.support.design.widget.TabLayout>
+
+
+
+ </android.support.design.widget.AppBarLayout>
+
+    <!--Content영역(ViewPager)-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_drawer"
+    tools:context=".MainActivity">
+    
+    <!-- 1. 화면을 구성하는 Content 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        
+    </RelativeLayout>
+    
+    <!-- 2. 왼쪽에 숨어있는 Drawer 레이아웃 -->
+    <!-- Navigation전용 View사용을 권장 -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu">
+    </android.support.design.widget.NavigationView>
+
+    
+
+</android.support.v4.widget.DrawerLayout>

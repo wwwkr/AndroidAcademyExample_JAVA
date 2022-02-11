@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameoverActivity"
+    android:background="@drawable/back_04"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:padding="3dp"
+        android:background="#000000"
+        android:clickable="true"
+        android:onClick="clickImg"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/ui_gameover_back"
+        android:layout_below="@id/iv"
+        android:layout_centerHorizontal="true"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ui_gameover_label_champion"/>
+
+            <TextView
+                android:id="@+id/tv_champion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0000000"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="#008888"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ui_gameover_label_yourscore"/>
+
+            <TextView
+                android:id="@+id/tv_yourscore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0000000"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="#ff8800"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_select_gameretry"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:clickable="true"
+        android:onClick="clickRetry"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_select_gameexit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:onClick="clickExit"/>
+
+
+
+</RelativeLayout>

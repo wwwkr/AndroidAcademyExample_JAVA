@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_02"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_start"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:src="@drawable/btn_select_gamestart"
+        android:layout_below="@id/iv_title"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="clickStart"/>
+
+    <ImageView
+        android:id="@+id/btn_exit"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/btn_select_gameexit"
+        android:layout_below="@id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginTop="16dp"
+        android:onClick="clickExit"/>
+</RelativeLayout>

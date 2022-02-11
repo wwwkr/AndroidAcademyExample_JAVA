@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ex12Toast</string>
+    <string name="toast_msg">Toast msg</string>
+</resources>

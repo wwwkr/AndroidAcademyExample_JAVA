@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <CheckBoxPreference
+        android:key="message"
+        android:title="소리알림"
+        android:summary="소리로 알림을 받으려면 체크하세요"/>
+
+
+    <SwitchPreference
+        android:key="vibrate"
+        android:title="진동알림"
+        android:summary="메세지가 왔을 때 진동으로 알림을 받으려면 체크하세요."/>
+
+
+
+
+
+    <!--중첩으로 PreferenceScreen을 넣으면 새로운 설정창이 열림-->
+
+    <PreferenceScreen
+        android:title="네트워크"
+        android:summary="네트워크를 설정합니다">
+
+        <SwitchPreference
+            android:key="aaa"
+            android:title="로밍서비스"
+            android:summaryOn="켜짐"
+            android:summaryOff="꺼짐"/>
+
+    </PreferenceScreen>
+</PreferenceScreen>

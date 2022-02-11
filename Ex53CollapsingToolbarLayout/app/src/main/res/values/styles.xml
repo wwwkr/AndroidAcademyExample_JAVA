@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Appbar">
+        <!--앱바안에 툴바가 바로 있을 때의 제목 색깔-->
+        <item name="titleTextColor">#FFFFFF</item>
+
+        <!--앱바안에 제목줄의 글씨색상을 지칭하는 속성값 이용-->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+
+        <item name="colorControlNormal">#FFFFFF</item>
+
+
+        <!--액션바(옵션)메뉴의 글씨 색상 변경-->
+        <item name="android:textColor">#333333</item>
+    </style>
+
+</resources>

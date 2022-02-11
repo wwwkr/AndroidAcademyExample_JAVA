@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "930409349862",
+    "firebase_url": "https://myfirebasechatting.firebaseio.com",
+    "project_id": "myfirebasechatting",
+    "storage_bucket": "myfirebasechatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930409349862:android:e6a6393f202df3f1",
+        "android_client_info": {
+          "package_name": "com.rtw181204.myfirebasechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930409349862-39sul8iq8oojshktqvbaodo39f6526jq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWBPLaBTcPhR6eeR1pqwesuER9aef-7iE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

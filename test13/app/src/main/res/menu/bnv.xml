@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- BNV 는 최대 5개의 메뉴아이템까지만 가능함 -->
+    <item android:id="@+id/menu_aa"
+        android:title="aa"
+        android:icon="@android:drawable/ic_menu_search"/>
+    <item android:id="@+id/menu_bb"
+        android:title="bb"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+    <item android:id="@+id/menu_cc"
+        android:title="cc"
+        android:icon="@android:drawable/ic_menu_camera"/>
+    <item android:id="@+id/menu_dd"
+        android:title="dd"
+        android:icon="@android:drawable/ic_menu_call"/>
+
+</menu>

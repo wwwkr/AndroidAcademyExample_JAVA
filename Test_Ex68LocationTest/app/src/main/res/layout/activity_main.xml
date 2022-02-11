@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_providers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위치정보제공자들"/>
+
+    <TextView
+        android:id="@+id/tv_bestprovider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="베스트 위치정보제공자"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 위치 얻어오기"
+        android:onClick="clickBtn"/>
+
+    <TextView
+        android:id="@+id/tv_mylocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위도, 경도"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 위치 자동갱신"
+        android:layout_marginTop="40dp"
+        android:onClick="clickBtn2"/>
+
+    <TextView
+        android:id="@+id/tv_autolocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위도, 경도"
+        android:textStyle="bold"
+        android:padding="8dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 위치 자동갱신 종료"
+        android:onClick="clickBtn3"/>
+
+</LinearLayout>

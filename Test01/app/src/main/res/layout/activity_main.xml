@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regist Member information"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME :"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/et01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv01"
+            android:layout_alignBaseline="@+id/tv01"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENDER :"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tv01"
+            android:layout_marginBottom="5dp"
+            android:layout_alignRight="@+id/tv01"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv01"
+            android:layout_toRightOf="@id/tv02"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"
+                android:layout_marginRight="20dp"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"/>
+
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CITY :"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tv02"
+            android:layout_marginBottom="5dp"
+            android:layout_alignRight="@+id/tv02"/>
+
+
+        <RadioGroup
+            android:id="@+id/rg02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv02"
+            android:layout_toRightOf="@id/tv03"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEUOL"
+                android:layout_marginRight="20dp"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="BUSAN"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETC"/>
+
+
+
+        </RadioGroup>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv03"
+            android:layout_marginBottom="5dp"
+            >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PHONE :"
+                   android:textSize="17sp"
+                   android:textStyle="bold"
+                   android:layout_marginRight="5dp"
+
+
+                   />
+
+            <EditText
+                android:id="@+id/et02"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et03"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et04"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHOICE CONTACT METHOD(MULTIPLE)"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/ll01"
+        android:layout_marginBottom="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv04"
+        android:orientation="horizontal"
+        android:weightSum="8"
+       >
+
+        <CheckBox
+            android:id="@+id/cb01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-MALE"
+            android:layout_weight="2"/>
+        <CheckBox
+            android:id="@+id/cb02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE"
+            android:layout_weight="2"/>
+        <CheckBox
+            android:id="@+id/cb03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISIT"
+            android:layout_weight="2"/>
+        <CheckBox
+            android:id="@+id/cb04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:layout_weight="2"/>
+
+
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRATION"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/ll02"
+            android:onClick="clickBtn"
+            />
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEMBER LIST"
+            android:background="#FFFF66FF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:layout_below="@id/btn01"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFDDFF"
+            android:layout_below="@id/btn02">
+            <TextView
+                android:id="@+id/tv05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/listitem_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/korea"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/listitem_tv01"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="전현무"
+            android:textSize="25sp"
+            android:textColor="#FF000000"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/listitem_tv02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대한민국"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

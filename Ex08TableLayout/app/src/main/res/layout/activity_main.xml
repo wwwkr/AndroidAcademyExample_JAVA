@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:stretchColumns="*">
+
+        <!--자동으로 모든 뷰는 Wrap)content로 사이즈가 지정됌-->
+       <TableRow>
+           <Button android:text="1"/>
+           <Button android:text="2"/>
+           <Button android:text="3"/>
+        </TableRow>
+
+        <!--셀(칸:column)의 위치지정가능 -->
+        <TableRow>
+
+            <Button />
+            <Button android:layout_column="2"/>
+        </TableRow>
+
+
+        <!--셀병합(칸합치기)-->
+        <TableRow>
+
+            <Button />
+            <Button android:layout_span="2"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*">
+
+        <TableRow>
+            <Button />
+            <Button />
+            <Button />
+            <Button />
+            <Button />
+
+        </TableRow>
+
+
+        <TableRow>
+            <Button />
+            <Button />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--셀 칸 숨기기-->
+    <TableLayout
+        android:collapseColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--TableRow가 아닌 것이 하나의 Row를 차지하는 것도 가능-->
+        <Button />
+
+        <TableRow>
+            <Button />
+            <Button />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</LinearLayout>

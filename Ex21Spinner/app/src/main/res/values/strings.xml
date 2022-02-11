@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ex21Spinner</string>
+    <string name="city">도시명</string>
+</resources>

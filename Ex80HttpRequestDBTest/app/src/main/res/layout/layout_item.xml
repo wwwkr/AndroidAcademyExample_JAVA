@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:padding="16dp"
+    android:background="#FFFF88">
+
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_toRightOf="@id/tv_num"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_num"
+        android:text="this is message.."
+        android:textStyle="bold"
+        android:textColor="#000FF0"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_msg"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-01-30 14:57:06"
+        android:textColor="#0000FF"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp"/>
+
+
+
+
+</RelativeLayout>

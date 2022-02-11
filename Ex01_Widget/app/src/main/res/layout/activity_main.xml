@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAD0FF"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <!--뷰의 크기, 글씨, 글씨크기, 글씨색상-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="30sp"
+        android:textColor="#ff00ff"
+        android:textStyle="bold|italic"
+        android:background="#00ff00"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!--visibility 속성-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:text="BBBB"
+        android:background="@drawable/tulips"
+        android:layout_marginTop="8dp"/>
+
+    <!--정렬 : gravity-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nice"
+        android:padding="16dp"
+        android:background="#ffffff"
+        android:gravity="right" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice"
+        android:padding="16dp"
+        android:background="#0ff0f0"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:text="한줄에 출력할때 칸이 모자르면 자동으로 줄바꿈이 됩니다. 123123123"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <!--autoLink-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tel:0102134632"
+        android:autoLink="phone"/>
+
+    <!--글씨를 Resource로 사용하기-->
+    <!--string.xml에 글씨를 써놓고 이를 적용-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_text"/>
+
+</LinearLayout>
